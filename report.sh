@@ -30,7 +30,7 @@ while true; do
     # Check if curl request was successful
     if [ -z "$response" ] || [ "$response" -ne 200 ]; then
         echo "Error: Unable to fetch data from the API. HTTP Status Code: $response"
-        rm -f response.json  # Ensure we don't leave a non-existent file error
+        rm -f response.json 
         exit 1
     fi
 
